@@ -8,7 +8,6 @@ a{
 header{
     background-color: #ff9900;
     color: white;
-    padding: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -22,35 +21,34 @@ header{
 }
 
 .logo {
-    max-height: 490px; /* Ajuste o tamanho da logo */
+    max-height: 95px; /* Ajuste o tamanho da logo */
     margin-right: 20px;
   }
 
 nav ul{
     list-style: none;
-    padding: 0;
-    
-}
-
-nav ul li{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    
+    margin: 0;
+    padding: 0;
 }
 
+nav li{
+    margin: 0.15px;
+}
+
+
 nav a{
-    text-decoration: none;
     color: aliceblue;
-    font-size: 18px;
+    font-size: 17px;
     padding: 10px 15px;
     transform: 0.3s;
-    font-size: 17px;
 }
 
 .nav{
-    margin-top: 40px;
+    margin-top: 20px;
+    width: 100%;
 }
 
 nav a:hover{
