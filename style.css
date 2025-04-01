@@ -43,17 +43,18 @@ nav a:hover{
 
 .carrossel{
     display: flex;
-    transition: transorm 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
     width: 300%;
 }
 
 .carrossel img{
     width: 100%;
-    height: auto;
+    height: 300px;
+    object-fit: cover;
     border-radius: 10px;
 }
 
-.prox .volta{
+.prox, .volta{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -67,9 +68,14 @@ nav a:hover{
 }
 
 .prox{
-    left: 10px;
+    right: 10px;
+   
 }
 
 .volta{
-    right: 10px;
+    left: 10px;
+}
+
+.prox:hover, .voltar:hover {
+    background: rgba(0, 0, 0, 0.8); /* Fundo mais escuro ao passar o mouse */
 }
