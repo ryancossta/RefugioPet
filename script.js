@@ -1,18 +1,23 @@
-let indiceAtual = 0;
+let slideIndex = 0;
+const slides = document.querySelector('.carrossel').children;
+const totalSlides = slides.length;
 
-function moverSlide(direcao){
-    const carrossel = document.querySelector(".carrossel");
-    const totalImages = document.querySelectorAll(".carrossel img").length;
+function moverSlide(n) {
+  slideIndex += n;
 
-    indiceAtual += direcao;
+  if (slideIndex < 0) {
+    slideIndex = totalSlides - 1;
+  } else if (slideIndex >= totalSlides) {
+    slideIndex = 0;
+  }
 
-    if (indiceAtual < 0){
-        indiceAtual = totalImages -1;
-    }
-
-    else if (indiceAtual >= totalImages) {
-        indiceAtual = 0;
-    }
-
-    carrossel.style.transform = 'translatex(-${indiceAtual * 100}%)'
+  updateSlidePosition();
 }
+
+function updateSlidePosition() {
+  const slideWidth = slides[0].offsetWidth;
+  document.querySelector('.carrossel').style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+}
+
+// Inicializa o carrossel na primeira imagem
+updateSlidePosition();
