@@ -6,22 +6,38 @@ a{
 }
 
 header{
-    background-color: #ff9800;
+    background-color: #ff9900;
     color: white;
-    padding: 20px;
-    text-align: center;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
 
 }
+
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-height: 490px; /* Ajuste o tamanho da logo */
+    margin-right: 20px;
+  }
 
 nav ul{
     list-style: none;
     padding: 0;
+    
 }
 
 nav ul li{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
+    
 }
 
 nav a{
@@ -30,6 +46,7 @@ nav a{
     font-size: 18px;
     padding: 10px 15px;
     transform: 0.3s;
+    font-size: 29px;
 }
 
 .nav{
@@ -61,7 +78,7 @@ nav a:hover{
 }
 
 .carrossel img{
-    width: 100%;
+    width: 99%;
     height: auto;
     object-fit: cover;
     object-position: center;
@@ -119,3 +136,46 @@ section ul li{
     font-size: 19px;
     line-height: 1.6;
 }
+
+footer {
+    background-color: #f0f0f0;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .footer-logo img {
+    max-height: 100px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .footer-social a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+  }
