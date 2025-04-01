@@ -1,0 +1,19 @@
+@media (max-width: 600px) {
+    .caixa {
+      width: 45%; /* Diminui a largura para 45% */
+      margin: 10px auto;
+      display: block;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .caixa {
+      width: 80%; /* Diminui a largura para 80% */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .caixa {
+      width: 40%; /* Diminui a largura para 40% */
+    }
+  }

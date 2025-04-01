@@ -177,3 +177,46 @@ footer {
     border-top: 1px solid #ddd;
     padding-top: 10px;
   }
+
+
+
+
+
+
+
+
+
+
+
+  .caixa {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .caixa img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .caixa h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+
+  .caixa button {
+    background-color: #4CAF50; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão do botão */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    margin-top: 10px; /* Adiciona espaço acima do botão */
+  }
+
+  .caixa button:hover {
+    background-color: #3e8e41; /* Cor de fundo do botão ao passar o mouse */
+  }
