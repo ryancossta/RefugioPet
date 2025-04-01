@@ -1,6 +1,9 @@
 body{
     background-color:ivory;
 }
+a{
+    text-decoration: none;
+}
 
 header{
     background-color: #ff9800;
@@ -104,4 +107,15 @@ section{
     text-align: center;
     font-size: 19px;
     padding: 15px;
+    line-height: 1.7;
+}
+
+h3{
+    font-size: 20px;
+    color: #ff9800;
+}
+
+section ul li{
+    font-size: 19px;
+    line-height: 1.6;
 }
