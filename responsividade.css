@@ -1,34 +1,7 @@
-/* Para telas muito pequenas (celulares menores) */
-@media (max-width: 320px) {
-    .caixa {
-      width: 95%; /* Ocupa quase toda a largura */
+@media(max-width: 667){
+    .caixa{
+        display: flex;
+        justify-content: space-between;
+        
     }
-  }
-  
-  /* Para celulares */
-  @media (max-width: 480px) {
-    .caixa {
-      width: 90%; /* Ocupa a maior parte da largura */
-    }
-  }
-  
-  /* Para tablets e telas menores de desktop */
-  @media (max-width: 768px) {
-    .caixa {
-      width: 45%; /* Duas caixas por linha */
-    }
-  }
-  
-  /* Para desktops médios */
-  @media (min-width: 769px) and (max-width: 1200px) {
-    .caixa {
-      width: 30%; /* Três caixas por linha */
-    }
-  }
-  
-  /* Para desktops grandes */
-  @media (min-width: 1201px) {
-    .caixa {
-      width: 23%; /* Quatro caixas por linha */
-    }
-  }
+}
