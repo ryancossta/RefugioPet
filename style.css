@@ -10,7 +10,7 @@ header{
     color: white;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 10px 20px;
 
 }
@@ -18,6 +18,11 @@ header{
 .logo-container{
     display: flex;
     align-items: center;
+}
+
+.logo-container img{
+  width: 150px;
+  height: 150px;
 }
 
 .logo {
@@ -144,36 +149,25 @@ section ul li{
 .adote p{
     line-height: 1.6;
     font-size: 19px;
+    padding: 15px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.container2 {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+  justify-content: center; /* Centraliza as caixas horizontalmente */
+  gap: 20px; /* Espaço entre as caixas */
+}
 
   .caixa {
-    width: 300px;
+    width: 160px;
     border: 1px solid #ccc;
     padding: 20px;
-    margin: 10px;
+    margin: 6px;
     text-align: center;
     display: inline-block;
+    align-items: center;
+    justify-content: center;
   }
 
   .caixa img {
@@ -202,106 +196,11 @@ section ul li{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   footer {
     background-color: #f0f0f0;
     padding: 20px 0;
     text-align: center;
+    margin-top: 40px;
   }
   
   .footer-content {
