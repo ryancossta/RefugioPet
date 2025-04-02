@@ -21,3 +21,24 @@ function updateSlidePosition() {
 
 // Inicializa o carrossel na primeira imagem
 updateSlidePosition();
+
+
+
+
+
+//popup
+
+function mostrarTermo() {
+  document.getElementById("popup").style.display = "flex";
+}
+
+function fecharTermo() {
+  document.getElementById("popup").style.display = "none";
+}
+
+document.getElementById("formulario").addEventListener("submit", function(event) {
+  if (!document.getElementById("aceito").checked) {
+      alert("Você deve aceitar o termo de responsabilidade para continuar.");
+      event.preventDefault();
+  }
+});

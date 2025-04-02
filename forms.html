@@ -3,9 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário de adoção</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
+    <form action="">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome">  
+    
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" id="sobrenome"> 
+    
+        <label for="idade">Idade</label>
+        <input type="number" id="idade"> 
+    
+        <label for="cpf">Seu CPF</label>
+        <input type="text" id="cpf">  
+    
+        <label for="rg">Seu RG</label>
+        <input type="text" id="rg"> 
+    
+        <label for="endereco">Seu endereço</label>
+        <input type="text" id="endereco"> 
+    
+        <label for="email">Seu e-mail</label>
+        <input type="email" id="email"> 
+    
+        <label for="profissao">Profissão</label>
+        <input type="text" id="profissao"> 
+    
+        <label for="residentes">Quantas pessoas moram com você?</label>
+        <input type="number" id="residentes">  
+    
+        <label> Mora com crianças?</label>
+        <div class="checkbox-group">
+            <input type="radio" id="kid-sim" name="kids" value="Sim">
+            <label for="kid-sim">Sim</label>
+    
+            <input type="radio" id="kid-nao" name="kids" value="Não">
+            <label for="kid-nao">Não</label>
+        </div>
+    
+        <label> Alguém da sua residência possui alergia a animais?</label>
+        <div class="checkbox-group">
+            <input type="radio" id="alergia-sim" name="alergia" value="Sim">
+            <label for="alergia-sim">Sim</label>
+    
+            <input type="radio" id="alergia-nao" name="alergia" value="Não">
+            <label for="alergia-nao">Não</label>
+        </div>
+    
+        <label for="casa-ap">Reside em casa ou apartamento?</label>
+        <input type="text" id="casa-ap"> 
+    
+        <label> Já possui algum Pet?</label>
+        <div class="checkbox-group">
+            <input type="radio" id="pet-sim" name="pet" value="Sim">
+            <label for="pet-sim">Sim</label>
+    
+            <input type="radio" id="pet-nao" name="pet" value="Não">
+            <label for="pet-nao">Não</label>
+        </div>
+    
+        <label for="quantos-pets">Se possui, quantos são?</label>
+        <input type="number" id="quantos-pets">
+    
+        <label for="termo">Termo de Responsabilidade</label>
+        <button type="button" onclick="mostrarTermo()">Ler Termo de Responsabilidade</button>
+    
+        <div>
+            <input type="checkbox" id="aceito">
+            <label for="aceito">Declaro que li e aceito os termos acima</label>
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+
+    <div id="popup" >
+        <div class="popup-content">
+
+            <p>
+                O Adotante compromete-se a fornecer ao Animal alimentação adequada, água fresca, abrigo seguro e confortável, e cuidados veterinários regulares, incluindo vacinação, vermifugação e castração (quando aplicável).
+                O Adotante responsabiliza-se por garantir a segurança do Animal, evitando situações de risco e acidentes.
+                O Adotante compromete-se a proporcionar ao Animal atividades físicas e mentais adequadas à sua espécie e idade.
+                O Adotante compromete-se a dedicar tempo e atenção ao Animal, oferecendo-lhe carinho e afeto.
+                O Adotante declara estar ciente das leis de proteção animal e compromete-se a cumpri-las, evitando qualquer forma de maus-tratos ou negligência.
+                O Adotante responsabiliza-se por quaisquer danos ou prejuízos que o Animal possa causar a terceiros.
+                O Adotante compromete-se a manter o Animal devidamente identificado, utilizando coleira com placa de identificação e microchip (quando aplicável).
+                O Adotante declara ter condições financeiras e emocionais para arcar com os custos e responsabilidades da adoção.
+                O Adotante compromete-se a não abandonar o Animal em nenhuma hipótese.
+                Em caso de impossibilidade de continuar com a guarda do Animal, o Adotante compromete-se a entrar em contato com a organização responsável pela adoção para encontrar um novo lar adequado para o Animal.
+                O Adotante permitirá visitas de acompanhamento da organização responsável pela adoção, caso necessário, para garantir o bem-estar do Animal.
+                O Adotante declara ter sido informado sobre as características e necessidades específicas do Animal, bem como sobre seu histórico de saúde e comportamento.
+                O Adotante declara ter recebido orientações sobre cuidados básicos com o Animal, adaptação ao novo lar e socialização.
+            </p>
+
+        </div>
+
+        <button onclick="fecharTermo()">Fechar</button>
+    </div>
+    
+
     
 </body>
 </html>
