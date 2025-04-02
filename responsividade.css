@@ -1,19 +1,34 @@
-@media (max-width: 600px) {
+/* Para telas muito pequenas (celulares menores) */
+@media (max-width: 320px) {
     .caixa {
-      width: 45%; /* Diminui a largura para 45% */
-      margin: 10px auto;
-      display: block;
+      width: 95%; /* Ocupa quase toda a largura */
     }
   }
   
-  @media (max-width: 768px) {
-    .caixa {
-      width: 80%; /* Diminui a largura para 80% */
-    }
-  }
-  
+  /* Para celulares */
   @media (max-width: 480px) {
     .caixa {
-      width: 40%; /* Diminui a largura para 40% */
+      width: 90%; /* Ocupa a maior parte da largura */
+    }
+  }
+  
+  /* Para tablets e telas menores de desktop */
+  @media (max-width: 768px) {
+    .caixa {
+      width: 45%; /* Duas caixas por linha */
+    }
+  }
+  
+  /* Para desktops médios */
+  @media (min-width: 769px) and (max-width: 1200px) {
+    .caixa {
+      width: 30%; /* Três caixas por linha */
+    }
+  }
+  
+  /* Para desktops grandes */
+  @media (min-width: 1201px) {
+    .caixa {
+      width: 23%; /* Quatro caixas por linha */
     }
   }
