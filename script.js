@@ -26,19 +26,22 @@ updateSlidePosition();
 
 
 
-//popup
-
-function mostrarTermo() {
-  document.getElementById("popup").style.display = "flex";
-}
-
-function fecharTermo() {
-  document.getElementById("popup").style.display = "none";
-}
-
-document.getElementById("formulario").addEventListener("submit", function(event) {
-  if (!document.getElementById("aceito").checked) {
-      alert("Você deve aceitar o termo de responsabilidade para continuar.");
-      event.preventDefault();
-  }
+document.addEventListener("DOMContentLoaded", function() {
+  const termoPopup = document.getElementById("popup-termo");
+  const btnLerTermo = document.getElementById("btn-ler-termo");
+  const btnFecharTermo = document.getElementById("btn-fechar-termo");
+  
+  btnLerTermo.addEventListener("click", function() {
+      termoPopup.style.display = "flex";
+      termoPopup.style.visibility = "visible";
+      termoPopup.style.opacity = "1";
+  });
+  
+  btnFecharTermo.addEventListener("click", function() {
+      termoPopup.style.visibility = "hidden";
+      termoPopup.style.opacity = "0";
+      setTimeout(() => {
+          termoPopup.style.display = "none";
+      }, 300);
+  });
 });

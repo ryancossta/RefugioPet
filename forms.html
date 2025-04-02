@@ -8,6 +8,26 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
+
+    <header>
+        <div class="logo-container">
+          <img src="./imgs/Preview__2_-removebg-preview.png" alt="Logo RefugioPet" class="logo">
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="./index.html">Sobre Nós</a>
+              <a href="">Contato</a>
+              <a href="./forms.html">Formulário de adoção</a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+
+
+
+
+
     <form action="">
         <label for="nome">Nome</label>
         <input type="text" id="nome">  
@@ -81,31 +101,37 @@
     </form>
 
 
-    <div id="popup" >
-        <div class="popup-content">
+   
 
-            <p>
-                O Adotante compromete-se a fornecer ao Animal alimentação adequada, água fresca, abrigo seguro e confortável, e cuidados veterinários regulares, incluindo vacinação, vermifugação e castração (quando aplicável).
-                O Adotante responsabiliza-se por garantir a segurança do Animal, evitando situações de risco e acidentes.
-                O Adotante compromete-se a proporcionar ao Animal atividades físicas e mentais adequadas à sua espécie e idade.
-                O Adotante compromete-se a dedicar tempo e atenção ao Animal, oferecendo-lhe carinho e afeto.
-                O Adotante declara estar ciente das leis de proteção animal e compromete-se a cumpri-las, evitando qualquer forma de maus-tratos ou negligência.
-                O Adotante responsabiliza-se por quaisquer danos ou prejuízos que o Animal possa causar a terceiros.
-                O Adotante compromete-se a manter o Animal devidamente identificado, utilizando coleira com placa de identificação e microchip (quando aplicável).
-                O Adotante declara ter condições financeiras e emocionais para arcar com os custos e responsabilidades da adoção.
-                O Adotante compromete-se a não abandonar o Animal em nenhuma hipótese.
-                Em caso de impossibilidade de continuar com a guarda do Animal, o Adotante compromete-se a entrar em contato com a organização responsável pela adoção para encontrar um novo lar adequado para o Animal.
-                O Adotante permitirá visitas de acompanhamento da organização responsável pela adoção, caso necessário, para garantir o bem-estar do Animal.
-                O Adotante declara ter sido informado sobre as características e necessidades específicas do Animal, bem como sobre seu histórico de saúde e comportamento.
-                O Adotante declara ter recebido orientações sobre cuidados básicos com o Animal, adaptação ao novo lar e socialização.
-            </p>
-
+    <!-- Pop-up de confirmação -->
+    <div id="popup-confirmacao">
+        <div class="popup-confirm">
+            <p><strong>Formulário concluído.</strong></p>
+            <p>Sua ficha irá para análise.</p>
+            <button onclick="fecharConfirmacao()">Fechar</button>
         </div>
-
-        <button onclick="fecharTermo()">Fechar</button>
     </div>
     
-
+    <footer>
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="./imgs/Preview__2_-removebg-preview.png" alt="Logo RefugioPet" class="logo">
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="#sobre">Sobre Nós</a></li>
+              <li><a href="">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Instagram</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 RefugioPet. Todos os direitos reservados.</p>
+        </div>
+      </footer>
     
 </body>
 </html>
