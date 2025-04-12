@@ -124,6 +124,9 @@
         background: none;
         cursor: default;
       }
+      .footer-content a{
+        font-size: 22px;
+      }
   }
 
   /* Monitores grandes e desktops */
@@ -132,5 +135,8 @@
   @media (min-width: 1200px) {
      .caixa {
     width: 20%;
+  }
+  .footer-content a{
+    font-size: 22px;
   }
   }
