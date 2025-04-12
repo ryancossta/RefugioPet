@@ -9,19 +9,24 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-          <img src="./imgs/Captura_de_tela_2025-04-11_010033-removebg-preview.png" alt="Logo RefugioPet" class="logo">
-        </div>
-        <nav>
-          <ul class="menu">
-            <li>
-              <a href="./index.html">Home</a>
-              <a href="https://vetvivercare.plano10.com.br/">Nossos parceiros</a>
-            </li>
-          </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="logo-container">
+      <img src="./imgs/Captura_de_tela_2025-04-11_010033-removebg-preview.png" alt="Logo RefugioPet" class="logo">
+    </div>
+    <nav>
+      <ul class="menu">
+        <li>
+          <a href="./index.html">Home</a>
+        </li>
+        <li>
+          <select id="parceiros" onchange="if(this.value) window.open(this.value, '_blank')">
+            <option value="">Parceiros</option>
+            <option value="https://vetvivercare.plano10.com.br/">VetViver</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
     <h1>Rações</h1>
 

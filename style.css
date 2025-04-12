@@ -72,7 +72,22 @@ nav a:hover{
   color: white;
   cursor: pointer;
 }
+select {
+  border: none;
+  background: transparent;
+  font-size: 22px;
+  color: #333;
+  cursor: pointer;
+}
 
+/* Remove a seta padrão do select no Chrome */
+select::-ms-expand {
+  display: none;
+}
+
+select:focus {
+  outline: none;
+}
 
 
 

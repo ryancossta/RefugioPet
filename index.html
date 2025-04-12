@@ -10,20 +10,25 @@
 
 
 </head>
-<body id="topo">
-    <header>
-        <div class="logo-container">
-          <img src="./imgs/Captura_de_tela_2025-04-11_010033-removebg-preview.png" alt="Logo RefugioPet" class="logo">
-        </div>
-        <nav>
-          <ul>
-            <li>
-              <a href="./produtos.html">Produtos</a>
-              <a href="https://vetvivercare.plano10.com.br/">Nossos parceiros</a>
-            </li>
-          </ul>
-        </nav>
-    </header>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="./imgs/Captura_de_tela_2025-04-11_010033-removebg-preview.png" alt="Logo RefugioPet" class="logo">
+    </div>
+    <nav>
+      <ul class="menu">
+        <li>
+          <a href="./produtos.html">Produtos</a>
+        </li>
+        <li>
+          <select id="parceiros" onchange="if(this.value) window.open(this.value, '_blank')">
+            <option value="">Selecione</option>
+            <option value="https://vetvivercare.plano10.com.br/">VetViver</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
     <section>
         <div id="sobre" class="sobre">
