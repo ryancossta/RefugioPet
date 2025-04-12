@@ -1,59 +1,107 @@
-/*Celulares */
-
 /* smartphones menores (ex: iPhone SE) */
 @media (max-width: 480px) {
+  .logo-container img{
+    display: none;
+}
+.footer-content a{
+  font-size: 22px;
+}
 }
 
+
   /* smartphones maiores */
-  @media (min-width: 481px) and (max-width: 767px) {
-    .menu {
-        
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            list-style: none;
-            background-color: orange;
-            padding: 20px;
-            margin: 0;
-        
-      }
-    
-      .menu li {
-        margin-bottom: 10px;
-      }
+  @media (min-width: 481px) and (max-width: 768px) {
+    header{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
     }
-
-
+    
+    header a{
+      font-size: 28px;
+      color: black;
+    }
     .logo-container img{
         display: none;
     }
-
     .container2 {
         display: flex;
         flex-direction: column;
         align-items: center;
       }
-  
+      .caixa button:hover{
+        color: inherit;
+        text-decoration: none;
+        background: none;
+        cursor: default;
+      }
+      nav a:hover{
+        color: black;
+        text-decoration: none;
+        background: none;
+        cursor: default;
+      }
+      .caixa {
+        width: 35%;
+      }
+      .footer-content a{
+        font-size: 22px;
+      }
+    }
 
 
-
-
-
-  /*Tablets*/
 
    /* tablets em modo retrato/paisagem (ex: iPad) */
   @media (min-width: 768px) and (max-width: 991px) {
-   
+    .logo-container img{
+      display: none;
+  }
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+  }
+  header a{
+    font-size: 28px;
+    color: black;
+  }
+  .caixa button:hover{
+    color: inherit;
+    text-decoration: none;
+    background: none;
+    cursor: default;
+  }
+  nav a:hover{
+    color: black;
+    text-decoration: none;
+    background: none;
+    cursor: default;
+  }
+  .footer-content a{
+    font-size: 22px;
+  }
   }
 
 
 
-
-
-  /* Laptops e Notebooks */
-
-  /* notebooks e telas médias */
+ /* notebooks e telas médias */
   @media (min-width: 992px) and (max-width: 1199px) {
+    header{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+    }
+    
+    header a{
+      font-size: 28px;
+      color: black;
+    }
+    .logo-container img{
+      display: none;
+  }
     .container2 {
         flex-direction: row;
         flex-wrap: wrap;
@@ -64,19 +112,25 @@
         width: 45%;
         margin: 10px;
       }
+    .caixa button:hover{
+        color: inherit;
+        text-decoration: none;
+        background: none;
+        cursor: default;
+      } 
+    nav a:hover{
+        color: black;
+        text-decoration: none;
+        background: none;
+        cursor: default;
+      }
   }
-
-
-
-
-
-
 
   /* Monitores grandes e desktops */
 
    /* telas grandes (ex: desktops full HD) */
   @media (min-width: 1200px) {
      .caixa {
-    width: 30%;
+    width: 20%;
   }
   }

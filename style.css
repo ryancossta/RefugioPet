@@ -64,6 +64,21 @@ nav a:hover{
     border-radius: 5px;
 }
 
+.menu-hambuger {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
 /*SECTION PÁGINA INDEX*/
 section{
     padding: 20px;  
@@ -236,9 +251,6 @@ h1{
   .btn-whatsapp:hover {
     background-color: #1ebe5d;
   }
-
-
-
 
 
 
